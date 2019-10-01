@@ -20,4 +20,7 @@ function TOH(num, source, dest, temp) {
 }
 console.log(TOH(3, 'A', 'C', 'B'));
 
-// O(n ^ 2)
+// O(2^n)
+
+// it has exponential time complexity. For the single increase in problem size, the time
+// required is double the previous one
