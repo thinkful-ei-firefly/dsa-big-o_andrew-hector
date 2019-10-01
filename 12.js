@@ -6,4 +6,30 @@ const sheep = function(num) {
 };
 //o(n)
 
-sheep(3);
+const powerCalculator = function(x, y) {
+  if (y < 0) {
+    return 'exponent should be >= 0';
+  } else {
+    return x ^ y;
+  }
+};
+//o(1)
+
+const revString = function(string) {
+  let str = string.split('');
+  str = str.reverse();
+  str = str.join('');
+  return str;
+};
+//o(1)
+
+function nthNumber(n) {
+  let results = 0;
+  for (let i = 0; i <= n; i++) {
+    results = results + i;
+  }
+  return results;
+}
+console.log(nthNumber(4));
+
+//
