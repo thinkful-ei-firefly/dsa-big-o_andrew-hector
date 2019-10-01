@@ -32,4 +32,16 @@ function nthNumber(n) {
 }
 console.log(nthNumber(4));
 
-//
+// O(n) Linear
+
+function stringSplitter(str, sep) {
+  let result = '';
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== sep) {
+      result = result + str[i];
+    }
+  }
+  return result;
+}
+
+console.log(stringSplitter('qw/er/ty', '/'));
