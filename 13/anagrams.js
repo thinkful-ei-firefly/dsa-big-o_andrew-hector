@@ -14,3 +14,5 @@ function anagram(pre, str) {
 }
 anagram('', 'east');
 anagram('', 'ally');
+
+// O(2^str) Exponential

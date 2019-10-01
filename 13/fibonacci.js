@@ -6,11 +6,13 @@
 let solution = [1, 1];
 
 function fibonacci(num) {
-    if(num < 2) {
-        return solution;
-    }
-    solution.push(solution[solution.length-1] + solution[solution.length-2]);
-    return fibonacci(num-1);
+  if (num < 2) {
+    return solution;
+  }
+  solution.push(solution[solution.length - 1] + solution[solution.length - 2]);
+  return fibonacci(num - 1);
 }
 
 console.log(fibonacci(7)); //13
+
+// O(3 ^ n) Exponential

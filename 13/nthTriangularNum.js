@@ -1,15 +1,13 @@
 'use strict';
+//5 => 5 + 4 + 3 + 2 + 1
 
-const tri = function (n) {
-    if (n < 0) {
-        return 'n should be >= 0'
-    }
-    else if (n == 0) {
-        return 0
-    }
-    else {
-        return (n + tri(n - 1))
-    }
+function triangularNumb(num) {
+  if (num === 0) {
+    return 0;
+  }
+
+  return num + triangularNumb(num - 1);
 }
 
-//o(n)
+console.log(triangularNumb(5)); // 15
+console.log(triangularNumb(30)); //465

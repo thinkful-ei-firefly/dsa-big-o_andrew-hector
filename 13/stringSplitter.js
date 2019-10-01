@@ -8,3 +8,5 @@ function stringSplitter(str, separator) {
 }
 
 console.log(stringSplitter('02/20/2020', '/'));
+
+// O(n) Linear

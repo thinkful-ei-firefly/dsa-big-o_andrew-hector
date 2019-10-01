@@ -8,3 +8,5 @@ function factorial(n) {
 console.log(factorial(5));
 console.log(factorial(4));
 console.log(factorial(15));
+
+// O(n) Linear

@@ -6,3 +6,5 @@ function reverseString(string) {
 }
 
 console.log(reverseString('hello'));
+
+// O(n) Linear
